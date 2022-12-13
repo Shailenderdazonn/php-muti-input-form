@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
 ('$adname','$price','$minprice','$date')";
 $query= mysqli_query($conn,$sql);
 if($query){
-$sql2= "INSERT INTO info2 (message) VALUES('$category')";
+$sql2= "INSERT INTO info2 (category) VALUES('$category')";
 $result= mysqli_query($conn, $sql2);
 echo'the ad is submitted';
 }else{
